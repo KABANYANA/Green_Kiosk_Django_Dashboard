@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 class Mamamboga(models.Model):
     name = models.CharField(max_length=32)
@@ -9,3 +8,4 @@ class Mamamboga(models.Model):
     password = models.CharField(max_length=32)
     def __str__(self):
         return self.name
+

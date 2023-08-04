@@ -8,4 +8,4 @@ class Payment(models.Model):
     receipt = models.CharField(max_length=32)
     payment_method = models.CharField(max_length=32)
     def __str__(self):
-        return self.name
+        return self.amount
