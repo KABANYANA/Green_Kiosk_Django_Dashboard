@@ -1,7 +1,7 @@
-table, th, tr, td {
+/* table, th, tr, td {
     border:solid  1px;
-    padding: 60px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 10px;
 
 
   }
@@ -16,3 +16,9 @@ table, th, tr, td {
     transition: .6s;
     transform: scale(1.1);
   }
+  table img{
+    width: 2%;
+  }
+  body{
+    display: flex;
+  } */

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+</head>
+<body>
+    <h1>CART</h1>
+    <div class="">
+        {% for product in products %}
+        <div>
+            <img src="{{ product.image.url }}" alt="{{ product.name }} Image">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.price }}</p>
+            <p>{{ product.stock }}</p>
+
+            <a href="{% url 'product_update' id=product.id %}">Update</a><br>
+            <a href="{% url 'product_delete' product.id %}">Remove</a><br>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
